@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="mes.js"></script>
+    <script src="gauss-legendre-quadrature.js"></script>
+    <script src="solver.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="styles.css"/>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css"/>
+    <title>Piotr Śmiałek - MES</title>
+</head>
+<body>
+<div class="chartContainer">
+    <canvas id="chart" width="30" height="30"></canvas>
+</div>
+<div>
+    <form>
+        <label>
+            <input type="text" id="inputValue"  placeholder="Enter value, initial is 5"/>
+        </label>
+    </form>
+    <button id="calculate-button" class="button-28" role="button">
+        Calculate
+    </button>
+    <button id="animation-button" class="button-28" role="button">
+        Start Animation
+    </button>
+    <button id="stop-button" class="button-28" role="button">
+        Stop Animation
+    </button>
+    <a href="solution.pdf" target="_blank">
+        <button id="solution-button" class="button-28" role="button">
+            See solution
+        </button>
+    </a>
+    <div>
+        <p id="time-message">
+            The calculation time will be displayed here
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
